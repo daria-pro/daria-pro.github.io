@@ -1,0 +1,17 @@
+.body-section {
+  padding: 140px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E5E5E5;
+  flex-direction: column;
+}
+
+
+.cards-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 50px 0;
+  gap: 29px;
+}
