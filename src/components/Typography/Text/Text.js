@@ -1,13 +1,14 @@
 import React from 'react'
 import './Text.scss'
 
-const Text = ({children, margin, padding, textAlign}) => {
+const Text = ({children, margin, padding, textAlign, color}) => {
   return (
     <p className='card-text'
     style={{
       margin,
       padding,
-      textAlign: textAlign
+      textAlign: textAlign,
+      color
       }}
     >
       {children}

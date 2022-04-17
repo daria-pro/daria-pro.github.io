@@ -2,13 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   font-family: 'Nunito', sans-serif;
+  
 }
 
 .App {
-  width: 1024px;  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  margin: 0 auto;
+  background-color: #F8F8F8;  
+}
+
+.app-container {
+  background-color: #F8F8F8;
 }

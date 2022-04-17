@@ -14,7 +14,6 @@ const Body = () => {
     return response.json();
   })
   .then((data) => {
-    console.log(data.users);
     setUsers(data.users)
   });
   }, [])
@@ -22,8 +21,8 @@ const Body = () => {
   
 
   return (
-    <body>
-      <div className='body-section'>
+    <body >
+      <div className='app__getRequest'>
         <Heading>Working with GET request</Heading>
         <div className='cards-container'>
           {users.map((user) => (
@@ -32,8 +31,7 @@ const Body = () => {
         </div>
         <Button width='120px'>Show more</Button>        
       </div>
-      <div className='body-section'>
-        <Heading>Working with POST request</Heading>
+      <div className='app__postRequest'>        
         <Form />
       </div>
     </body>

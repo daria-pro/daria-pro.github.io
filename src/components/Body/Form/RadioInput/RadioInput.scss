@@ -1,9 +1,9 @@
 input[type="radio"] {
-  background-color: #E5E5E5;
+  background-color: #F8F8F8;
   font: inherit;
   width: 1.15em;
   height: 1.15em;
-  border: 1 solid #E5E5E5;
+  border: 1 solid #F8F8F8;
   display: grid;
   place-content: center;
 }
@@ -21,7 +21,7 @@ input[type='radio']:after {
   border-radius: 15px;
   top: -5px;
   position: relative;
-  background-color: #E5E5E5;
+  background-color: #F8F8F8;
   content: '';
   display: inline-block;
 }

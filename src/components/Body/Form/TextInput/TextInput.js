@@ -2,11 +2,12 @@ import React from 'react'
 import './TextInput.scss'
 
 const TextInput = (props) => {
-  const {type, name, placeholder, padding} = props;
+  const {type, name, placeholder, padding, onChange} = props;
 
   return (
     <>
       <input 
+      onChange={onChange}
       type={type} 
       id={name} 
       name={name} 

@@ -1,5 +1,6 @@
 div.fileinputs {
 	position: relative;
+  margin-top: 47px;
   margin-bottom: 54px;
 }
 
@@ -41,4 +42,10 @@ div.fakefile {
   width: 297px;
   padding: 14px 0 14px 16px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .photo {
+     max-width: 245px;;
+  }
 }

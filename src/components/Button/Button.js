@@ -1,9 +1,10 @@
 import React from 'react'
 import './Button.scss'
 
-const Button = ({children, color, border, height, width, variant}) => {
+const Button = ({children, color, border, height, width, variant, onClick}) => {
   return (
     <button
+      onClick={onClick}
       className={variant ?? 'yellow-btn'} 
       style={{
       backgroundColor: color,

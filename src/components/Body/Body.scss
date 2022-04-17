@@ -1,12 +1,19 @@
-.body-section {
+body {
+  width: 100%;  
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; 
+}
+
+.app__getRequest,
+.app__postRequest {
   padding: 140px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #E5E5E5;
+  background: #F8F8F8;
   flex-direction: column;
 }
-
 
 .cards-container {
   display: grid;
@@ -14,4 +21,28 @@
   grid-template-columns: 1fr 1fr 1fr;
   padding: 50px 0;
   gap: 29px;
+}
+
+@media (min-width: 1000px) {
+  .cards-container { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 775px) {
+  .cards-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media screen and (max-width: 400px) {
+  .app__getRequest,
+  .app__postRequest {
+    padding-right: 16px;
+    padding-left: 16px;
+    
+  } 
+
+  .cards-container { 
+    grid-template-columns: repeat(1, 1fr); 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }
