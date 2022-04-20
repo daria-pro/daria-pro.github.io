@@ -31,7 +31,8 @@ div.fakefile {
   width: 83px;
   height: 54px; 
   cursor: pointer;
-  
+  font-size: 16px;
+  color: #000000DE;  
 }
 
 .photo {
@@ -42,10 +43,15 @@ div.fakefile {
   width: 297px;
   padding: 14px 0 14px 16px;
   cursor: pointer;
+  font-size: 16px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .photo {
      max-width: 245px;;
+  }
+  
+  .file {
+    width: 100%;
   }
 }

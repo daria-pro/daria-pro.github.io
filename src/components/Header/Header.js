@@ -7,15 +7,17 @@ import Heading from '../Typography/Heading/Heading'
 const Header = () => {
   return (
     <>
-      <div >
-        <div className='nav-container'>
-          <nav>
-            <img src={logo} alt='logo' className='logo'/> 
-            <div className='btn-container'>
-            <Button className='btn-users'>Users</Button>
-            <Button>Sign up</Button>
-            </div> 
-          </nav>
+      <div className='app__header' >
+        <div className='app__header-bg'>
+          <div className='nav-container'>
+            <nav>
+              <img src={logo} alt='logo' className='logo'/> 
+              <div className='btn-container'>
+              <Button className='btn-users'>Users</Button>
+              <Button>Sign up</Button>
+              </div> 
+            </nav>
+          </div>
         </div>
         <div className='app__hero app__wrapper app__hero-bg'>
           <div className='app__hero-content'>

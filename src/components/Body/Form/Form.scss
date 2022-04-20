@@ -42,3 +42,9 @@
 .success-image {
   padding: 50px 0 100px 0;
 }
+
+@media screen and (max-width: 420px) {
+  .form {
+    max-width: 328px;
+  }
+}

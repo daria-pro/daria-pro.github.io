@@ -18,7 +18,13 @@ const Body = () => {
   });
   }, [])
 
-  
+  const [value, setValue] = useState();
+  const loadRefreshContent = () => {
+
+    const refresh = () => {
+        setValue({});
+    }
+  }  
 
   return (
     <body >
@@ -26,13 +32,13 @@ const Body = () => {
         <Heading>Working with GET request</Heading>
         <div className='cards-container'>
           {users.map((user) => (
-            <Card key={user.id} user={user}/>
+            <Card key={user.id} user={user} value={value}/>
           ))}
         </div>
         <Button width='120px'>Show more</Button>        
       </div>
       <div className='app__postRequest'>        
-        <Form />
+        <Form loadRefreshContent = {loadRefreshContent}/>
       </div>
     </body>
   )

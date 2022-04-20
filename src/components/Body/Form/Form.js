@@ -9,7 +9,7 @@ import axios from 'axios'
 import successImage from '../../../images/success-image.svg'
 import Heading from '../../Typography/Heading/Heading'
 
-const Form = () => {  
+const Form = ({loadRefreshContent}) => {  
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -33,6 +33,8 @@ const Form = () => {
     axios(GET_TOKEN)
     .then((response) => setToken(response.data.token))
   }, []);
+
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -58,8 +60,8 @@ const Form = () => {
    .then(function(data) { 
     if(data.success === true) {
       setIsSubmitted(true) 
+      loadRefreshContent();
     } else { 
-      console.log(data.message)
       setError(data.message) } 
     }) .catch(function(error) { 
       setError(error) 
@@ -75,11 +77,7 @@ const Form = () => {
     setIsEnabled(canBeSubmitted());    
   }, [name, email, phone, positionId, selectedFile])
 
-  useEffect(() => {
-    console.log(isPending)
-  }, [isPending])
-  
- 
+   
   return (
     <div className='form-container'>
     {!isSubmitted ?
